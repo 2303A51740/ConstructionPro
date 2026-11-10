@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: constructpro-frontend-service
+  namespace: constructpro
+  labels:
+    app: constructpro-frontend
+
+spec:
+  type: NodePort
+
+  selector:
+    app: constructpro-frontend
+
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30080

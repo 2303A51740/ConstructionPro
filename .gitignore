@@ -1,0 +1,45 @@
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+# Docker
+.docker/
+docker-compose.override.yml
+# Security and credentials
+*.pem
+*.key
+secrets/
+**/secrets/
+
+# Kubernetes secret files
+*-secret.yaml
+*-secret.yml
+# Kubernetes secret files
+k8s/secret.yaml
